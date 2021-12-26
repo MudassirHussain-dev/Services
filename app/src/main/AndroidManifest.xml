@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.hmh.services">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Services">
+        <activity
+            android:name=".foreground.ForegroundActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".intent_service.IntentServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".bound.BoundServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".start.StartServiceActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".start.MyDownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".intent_service.MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".bound.MusicPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".foreground.constant.ForegroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+    </application>
+
+</manifest>
