@@ -1,8 +1,6 @@
-package dev.hmh.services.start;
+package dev.hmh.services.s1.start;
 
 import android.os.Looper;
-
-import dev.hmh.services.start.DownloadHandler;
 
 
 public class DownloadThread extends Thread {

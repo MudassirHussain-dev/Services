@@ -1,4 +1,4 @@
-package dev.hmh.services.bound;
+package dev.hmh.services.s1.bound;
 
 
 import android.app.Service;

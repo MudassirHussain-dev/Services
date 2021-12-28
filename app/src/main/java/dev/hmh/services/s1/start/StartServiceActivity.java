@@ -1,4 +1,4 @@
-package dev.hmh.services.start;
+package dev.hmh.services.s1.start;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
@@ -9,15 +9,13 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.ResultReceiver;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import dev.hmh.services.MainActivity;
-import dev.hmh.services.Playlist;
+import dev.hmh.services.s1.Playlist;
 import dev.hmh.services.R;
 
 public class StartServiceActivity extends AppCompatActivity {

@@ -1,4 +1,4 @@
-package dev.hmh.services.foreground.constant;
+package dev.hmh.services.s1.foreground.constant;
 
 
 import android.app.PendingIntent;
@@ -14,7 +14,7 @@ import androidx.core.app.NotificationCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import dev.hmh.services.R;
-import dev.hmh.services.foreground.ForegroundActivity;
+import dev.hmh.services.s1.foreground.ForegroundActivity;
 
 
 public class MusicPlayerService extends Service {

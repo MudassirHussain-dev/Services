@@ -1,4 +1,4 @@
-package dev.hmh.services.bound;
+package dev.hmh.services.s1.bound;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
@@ -19,7 +19,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 
 import dev.hmh.services.R;
-import dev.hmh.services.start.MyDownloadService;
+import dev.hmh.services.s1.start.MyDownloadService;
 
 public class BoundServiceActivity extends AppCompatActivity {
 

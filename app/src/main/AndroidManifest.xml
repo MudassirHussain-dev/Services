@@ -3,6 +3,9 @@
     package="dev.hmh.services">
 
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,46 +13,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Services">
+        <service
+            android:name=".oreo.OreoService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
         <activity
-            android:name=".foreground.ForegroundActivity"
+            android:name=".oreo.OreoServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".s1.foreground.ForegroundActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".s1.intent_service.IntentServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".s1.bound.BoundServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".s1.start.StartServiceActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".s1.start.MyDownloadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".s1.intent_service.MyIntentService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".s1.bound.MusicPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".s1.foreground.constant.ForegroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity
-            android:name=".intent_service.IntentServiceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".bound.BoundServiceActivity"
-            android:exported="false" />
-        <activity
-            android:name=".start.StartServiceActivity"
-            android:exported="false" />
-
-        <service
-            android:name=".start.MyDownloadService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".intent_service.MyIntentService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".bound.MusicPlayerService"
-            android:enabled="true"
-            android:exported="true" />
-        <service
-            android:name=".foreground.constant.ForegroundService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
     </application>
 
 </manifest>

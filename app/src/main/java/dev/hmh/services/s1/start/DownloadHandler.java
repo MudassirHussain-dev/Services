@@ -1,17 +1,12 @@
-package dev.hmh.services.start;
+package dev.hmh.services.s1.start;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.os.ResultReceiver;
 import android.util.Log;
 
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
-
-import dev.hmh.services.MainActivity;
-import dev.hmh.services.start.MyDownloadService;
 
 
 public class DownloadHandler extends Handler {

@@ -1,4 +1,4 @@
-package dev.hmh.services.intent_service;
+package dev.hmh.services.s1.intent_service;
 
 import android.app.IntentService;
 import android.content.Intent;

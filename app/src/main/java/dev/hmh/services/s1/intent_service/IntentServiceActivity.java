@@ -1,4 +1,4 @@
-package dev.hmh.services.intent_service;
+package dev.hmh.services.s1.intent_service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,9 +14,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
-import dev.hmh.services.Playlist;
+import dev.hmh.services.s1.Playlist;
 import dev.hmh.services.R;
-import dev.hmh.services.start.MyDownloadService;
+import dev.hmh.services.s1.start.MyDownloadService;
 
 public class IntentServiceActivity extends AppCompatActivity {
     private static final String TAG = "MyTag";

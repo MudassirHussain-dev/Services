@@ -1,13 +1,10 @@
-package dev.hmh.services.start;
+package dev.hmh.services.s1.start;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
 import android.os.Message;
-import android.os.ResultReceiver;
 import android.util.Log;
-
-import dev.hmh.services.MainActivity;
 
 public class MyDownloadService extends Service {
     private static final String TAG = "MyTag";

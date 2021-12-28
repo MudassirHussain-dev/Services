@@ -1,4 +1,4 @@
-package dev.hmh.services.foreground.constant;
+package dev.hmh.services.s1.foreground.constant;
 
 import android.app.Notification;
 import android.app.Service;

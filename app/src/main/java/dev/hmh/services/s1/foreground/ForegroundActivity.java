@@ -1,4 +1,4 @@
-package dev.hmh.services.foreground;
+package dev.hmh.services.s1.foreground;
 
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
@@ -20,10 +20,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import dev.hmh.services.R;
-import dev.hmh.services.foreground.constant.Constants;
-import dev.hmh.services.foreground.constant.ForegroundService;
-import dev.hmh.services.foreground.constant.MusicPlayerService;
-import dev.hmh.services.start.MyDownloadService;
+import dev.hmh.services.s1.foreground.constant.Constants;
+import dev.hmh.services.s1.foreground.constant.ForegroundService;
+import dev.hmh.services.s1.foreground.constant.MusicPlayerService;
+import dev.hmh.services.s1.start.MyDownloadService;
 
 public class ForegroundActivity extends AppCompatActivity {
     private static final String TAG = "MyTag";
