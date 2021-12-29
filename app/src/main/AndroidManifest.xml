@@ -27,6 +27,7 @@
             android:exported="true">
 
         </activity>
+        <activity android:name=".s1.S1Activity"/>
         <activity
             android:name=".s1.intent_service.IntentServiceActivity"
             android:exported="false" />
